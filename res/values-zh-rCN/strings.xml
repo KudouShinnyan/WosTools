@@ -55,7 +55,8 @@
     <string name="suspicious_reroll">按重洗处理并继续</string>
     <string name="lang_title">界面语言</string>
     <string name="lang_follow">跟随系统</string>
-    <string name="lang_zh">中文</string>
+    <string name="lang_zh">简体中文</string>
+    <string name="lang_zh_tw">繁體中文</string>
     <string name="lang_ja">日本語</string>
     <string name="lang_en">English</string>
     <string name="lang_hint">适用于菜单、悬浮控制与通知，切换后立即生效；默认跟随系统。</string>
@@ -142,9 +143,11 @@
     <string name="capture_projection_failed">投屏授权失败：%1$s</string>
     <string name="roi_sign_left">符号/箭头区左边界</string>
     <string name="roi_sign_right">符号/箭头区右边界</string>
+    <string name="roi_reset">还原</string>
+    <string name="roi_reset_done">数值区域已还原。</string>
     <string name="ball_diagnose_result">每行显示 row_state、原始串、绿/红像素数、符号与结果。row_state=NO_CHANGE 且 fg 接近 0 表示游戏本行没显示变化值，按 0 参与求和、不触发重试；fg 有内容却读不出数字才是识别存疑。求助时把剪贴板全文贴出来即可一次定准。</string>
     <string name="ball_diagnose_autocalib">检测数值会自动定位六行变化值并保存纵向坐标。若失败，请把剪贴板全文贴出来。</string>
-    <string name="roi_hint">相对坐标（0~1）。点检测数值会按绿/红文字带自动校准首行、行距与行高，并判断第一条变化值属于第几行，某行没有变化值也不会让六行整体错位。只需手动微调左右边界。某行没有变化值时按 0 处理，不触发识别重试。</string>
+    <string name="roi_hint">相对坐标（0~1）。自动校准写入首行、行距与行高，左右四项保持手动。还原会把行参数回到上次校准值，左右边界回到默认值。</string>
     <string name="log_frame_unstable">六行单帧都能读，但采样窗口内始终没凑到两帧一致的数值，已暂停；请看下方的 diff。</string>
     <string name="ball_diagnose_locked">每次运行只校准一次并锁定，动画过渡帧不会改写已验证的行坐标；若数值读不出会自动解锁，在下一帧预览页重新校准。</string>
     <string name="log_wait_refresh">动作后没等到页面稳定，已暂停；请检查确认弹窗是否已关闭。</string>
@@ -161,4 +164,8 @@
     <string name="debug_title">开发者选项</string>
     <string name="debug_toggle">显示诊断工具</string>
     <string name="debug_hint">开启后，悬浮球面板会显示检测数值与逐行诊断说明，仅用于排查识别问题。</string>
+    <string name="roi_height">行高</string>
+    <string name="roi_manual">关闭自动校准</string>
+    <string name="roi_manual_need_cal">需先完成一次自动校准，才能手动接管。</string>
+    <string name="roi_manual_hint">关闭后按填写的数值运行，检测数值只出诊断，不会改写。</string>
 </resources>

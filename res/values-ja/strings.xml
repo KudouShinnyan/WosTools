@@ -55,7 +55,8 @@
     <string name="suspicious_reroll">洗い直しとして続行</string>
     <string name="lang_title">表示言語</string>
     <string name="lang_follow">システムに従う</string>
-    <string name="lang_zh">中文</string>
+    <string name="lang_zh">簡体中国語</string>
+    <string name="lang_zh_tw">繁体中国語</string>
     <string name="lang_ja">日本語</string>
     <string name="lang_en">English</string>
     <string name="lang_hint">メニュー、フローティング操作、通知に適用されます。切り替えは即時反映され、初期設定はシステムに従います。</string>
@@ -142,9 +143,11 @@
     <string name="capture_projection_failed">画面キャプチャの許可に失敗：%1$s</string>
     <string name="roi_sign_left">記号/矢印領域の左端</string>
     <string name="roi_sign_right">記号/矢印領域の右端</string>
+    <string name="roi_reset">リセット</string>
+    <string name="roi_reset_done">数値領域をリセットしました。</string>
     <string name="ball_diagnose_result">各行に row_state、生文字列、緑/赤ピクセル数、符号、結果を表示します。row_state=NO_CHANGE で fg が 0 に近い場合はゲームが変動値を表示していない行で、0 として合計に加算しリトライしません。fg があるのに数字が読めない場合のみ認識不明です。助けを求める際はクリップボードの全文を貼ってください。</string>
     <string name="ball_diagnose_autocalib">数値を検出すると6行の変動値を自動検出し、縦方向の座標を保存します。失敗した場合はクリップボードの全文を貼ってください。</string>
-    <string name="roi_hint">相対座標（0～1）。数値を検出ボタンで緑/赤の文字帯から先頭行・行間・高さを自動調整し、最初の帯が何行目かも判定します。変動値のない行があっても6行全体がずれません。手動で調整するのは左右端だけです。変動値のない行は 0 として扱い、認識リトライは発生しません。</string>
+    <string name="roi_hint">相対座標（0～1）。自動キャリブレーションが先頭行・行間隔・行の高さを書き込み、左右端の4項目は手動です。リセットは行の値を前回のキャリブレーション結果に、左右端を既定値に戻します。</string>
     <string name="log_frame_unstable">単一フレームでは6行読めましたが、サンプリング中に2フレームの数値が一致しませんでした。一時停止しました。下の diff を確認してください。</string>
     <string name="ball_diagnose_locked">1回の実行で校正は1度だけ行いロックします。アニメの途中フレームで確認済みの行座標は変わりません。数値が読めなくなった場合はロックを解除し、次のプレビューフレームで再校正します。</string>
     <string name="log_wait_refresh">操作後に画面が安定しませんでした。一時停止しました。確認ダイアログが閉じているか確認してください。</string>
@@ -161,4 +164,8 @@
     <string name="debug_title">開発者オプション</string>
     <string name="debug_toggle">診断ツールを表示</string>
     <string name="debug_hint">有効にすると、フローティングボールのパネルに数値を検出と行ごとの診断が表示されます。認識の確認用です。</string>
+    <string name="roi_height">行の高さ</string>
+    <string name="roi_manual">自動キャリブレーションを無効化</string>
+    <string name="roi_manual_need_cal">手動に切り替える前に、自動キャリブレーションを1回実行してください。</string>
+    <string name="roi_manual_hint">手動モードでは入力値がそのまま使われます。数値を検出は診断のみ行い、値を書き換えません。</string>
 </resources>

@@ -9,7 +9,7 @@ A local tool for Wos, currently covering pet tools. It runs on-device with no ne
 - Pet tools read the six preview deltas, sum the selected ones with equal weight, and decide Replace or Re-roll; priority only breaks a zero-sum tie.
 - A pet-only floating control: tap to start / pause / resume, hold for status, drag vertically to snap to either edge, close from its panel.
 - Capture mode follows the system: window capture on 34+ (global optional), global on 30-33, compatibility screen-cast on 29 and below.
-- Chinese, Japanese and English built in, following the system by default. Permissions, capture mode and language sit on the home screen; pet settings live one level deeper.
+- Simplified Chinese, Traditional Chinese, Japanese and English built in, following the system by default; Traditional Chinese covers zh-TW, zh-HK and generic Hant locales. Permissions, capture mode and language sit on the home screen; pet settings live one level deeper.
 
 ## Usage
 

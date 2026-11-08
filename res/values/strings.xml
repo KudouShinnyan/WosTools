@@ -55,7 +55,8 @@
     <string name="suspicious_reroll">Treat as re-roll and continue</string>
     <string name="lang_title">Interface language</string>
     <string name="lang_follow">Follow system</string>
-    <string name="lang_zh">中文</string>
+    <string name="lang_zh">Simplified Chinese</string>
+    <string name="lang_zh_tw">Traditional Chinese</string>
     <string name="lang_ja">日本語</string>
     <string name="lang_en">English</string>
     <string name="lang_hint">Applies to menus, floating control and notifications. Takes effect immediately; default follows the system.</string>
@@ -142,9 +143,11 @@
     <string name="capture_projection_failed">Screen capture authorization failed: %1$s</string>
     <string name="roi_sign_left">Sign/arrow area left edge</string>
     <string name="roi_sign_right">Sign/arrow area right edge</string>
+    <string name="roi_reset">Reset</string>
+    <string name="roi_reset_done">Value region reset.</string>
     <string name="ball_diagnose_result">Each row shows row_state, raw text, green/red pixel counts, sign and result. row_state=NO_CHANGE with fg near 0 means the game showed no delta for that row, counted as 0 with no retry. fg with content but an unreadable raw is SUSPECT. Paste the clipboard report when asking for help.</string>
     <string name="ball_diagnose_autocalib">Check values now locates the six delta rows automatically and saves their vertical coordinates. If it fails, paste the clipboard report.</string>
-    <string name="roi_hint">Relative coordinates (0..1). Check values auto-calibrates the first row, row spacing and height from the green/red bands, and detects which row the first band belongs to, so a row without a delta does not shift all six rows. Only the left/right edges need manual tuning. A row with no delta is counted as 0 and does not trigger recognition retries.</string>
+    <string name="roi_hint">Relative coordinates (0..1). Auto-calibration writes the first row, row spacing and row height; the four left/right edges stay manual. Reset restores the row values from the last calibration and the edges to defaults.</string>
     <string name="log_frame_unstable">All six rows were readable in single frames, but two frames never agreed within the sampling window. Paused; see the diff below.</string>
     <string name="ball_diagnose_locked">Calibration runs once per run and then locks; preview animation frames cannot change the verified row coordinates. If values become unreadable, it unlocks and recalibrates on the next preview frame.</string>
     <string name="log_wait_refresh">Page did not settle after the action. Paused; check whether the confirm dialog was dismissed.</string>
@@ -161,4 +164,8 @@
     <string name="debug_title">Developer options</string>
     <string name="debug_toggle">Show diagnostics</string>
     <string name="debug_hint">When enabled, the floating ball panel shows Check values and the per-line diagnostics. For troubleshooting value recognition only.</string>
+    <string name="roi_height">Row height</string>
+    <string name="roi_manual">Disable auto-calibration</string>
+    <string name="roi_manual_need_cal">Run auto-calibration once before taking manual control.</string>
+    <string name="roi_manual_hint">Manual mode keeps your values. Check values only reports diagnostics and will not overwrite them.</string>
 </resources>
